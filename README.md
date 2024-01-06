@@ -3,6 +3,8 @@
 BeastBreeder is a monster breeding game centered around breeding insectoids. It is hosted on IPFS, and gives users one free basic monster to start with as well as 1000 coins that can be used to buy other monsters and items to aid in training them etc. To login, users sign in using their Polygon wallet. This can also be used to buy coins and monster NFTs which have unique traits and advantages. The game features the following functionality:
 - Breeding system for creating new monsters with unique traits
 - Basic battling system for engaging in battles with other monsters
+- Advanced Breeding Mechanics
+- Skill Trees and Monster Specializations
 - Store UI and logic for buying items and monsters
 - Inventory screen for managing collected items
 - Procedural generation for generating quests
@@ -26,6 +28,8 @@ BeastBreeder is a monster breeding game centered around breeding insectoids. It 
   - `home.js`: Home page and monster list
   - `breeding.js`: Breeding system
   - `battling.js`: Basic battling system
+- `breeding.js`: Advanced Breeding Mechanics
+- `skill_trees.js`: Skill Trees and Monster Specializations
   - `store.js`: Store screen
   - `inventory.js`: Inventory screen
 - `utils/`: Helper classes and functions
