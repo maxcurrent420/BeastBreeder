@@ -1,6 +1,6 @@
 # BeastBreeder
 
-No description provided.
+BeastBreeder is a monster breeding game centered around breeding insectoids. It is hosted on IPFS, and gives users one free basic monster to start with as well as 1000 coins that can be used to buy other monsters and items to aid in training them etc. To login, users sign in using their Polygon wallet. This can also be used to buy coins and monster NFTs which have unique traits and advantages.
 
 ## File Structure
 
