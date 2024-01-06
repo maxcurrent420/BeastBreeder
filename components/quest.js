@@ -8,11 +8,17 @@ export class Quest {
     this.rewards = rewards;
   }
 
+  /**
+   * Starts the quest.
+   */
   startQuest() {
     // Perform necessary actions to start the quest
     // ...
   }
 
+  /**
+   * Completes the quest.
+   */
   completeQuest() {
     // Perform necessary actions to complete the quest
     // ...
