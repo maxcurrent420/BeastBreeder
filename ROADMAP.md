@@ -8,6 +8,47 @@ BeastBreeder is a monster breeding game centered around breeding insectoids. The
 
 Progress has been made on the base HTML page, minimal styling, instantiating core game objects, starting logic, monster data and methods, and the home page and monster list.
 
+## Other considerations
+Hosting our game on IPFS (InterPlanetary File System) can offer several benefits, such as decentralization, resistance to censorship, and potentially improved uptime. However, there are considerations and trade-offs that we should be aware of:
+
+### Performance
+- **Loading Times**: IPFS can have variable loading times because content is served by peers. Ensuring enough peers have the content can improve load times.
+- **Content Availability**: Content on IPFS is available as long as it is pinned by at least one peer. You may need to use a pinning service to ensure availability.
+
+### Maintenance
+- **Content Updating**: Updating content on IPFS is not as straightforward as on traditional servers. Each update generates a new hash, and you'll need to update links that point to your content.
+- **Domain Linking**: Unstoppable domains will be used to host our domain.
+
+### User Experience
+- **Browser Support**: Not all browsers natively support IPFS. Users may need to install browser extensions or use specific browsers.
+- **Wallet Integration**: Since your game uses Polygon wallets for login and transactions, ensure that wallet interactions work seamlessly with IPFS-hosted content.
+
+### Security
+- **Smart Contract Interaction**: If your game interacts with smart contracts, test thoroughly to ensure that IPFS hosting does not introduce any security vulnerabilities.
+- **Data Integrity**: IPFS provides content addressing, which ensures that the content is tamper-proof. However, you should still implement best practices for securing user data.
+
+### Costs
+- **Pinning Services**: While IPFS is a peer-to-peer network, relying on free nodes provided by others can be unreliable. You might need to use a paid pinning service to ensure your content remains available.
+
+### Scalability
+- **Handling Load**: Consider how IPFS will handle increased traffic. While IPFS can distribute load across nodes, popular content can still face bottlenecks.
+
+### Development Workflow
+- **Continuous Integration/Deployment**: Your current CI/CD pipelines may need to be adapted for IPFS deployment, which can affect your development workflow.
+
+### Legal and Ethical Considerations
+- **Content Removal**: On traditional servers, you can easily remove content. On IPFS, once content is distributed and pinned by others, it cannot be easily removed.
+
+### Community Support and Documentation
+- **Support Channels**: Ensure you have access to good support channels for IPFS, as you may encounter unique challenges that require community assistance.
+
+### Backup and Redundancy
+- **Data Backup**: Regularly back up your data. While IPFS is distributed, having your own backup is crucial.
+
+### Monitoring and Analytics
+- **Traffic Analytics**: Implementing analytics for an IPFS-hosted site can be more challenging but is necessary to understand user behavior.
+
+
 ## Planned Features
 
 ### Hosting on IPFS
