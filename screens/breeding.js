@@ -1,7 +1,8 @@
-import { Inventory, Item } from '../inventory.js';
+import { Inventory } from '../components/inventory.js';
 
 class Breeding {
-  constructor(playerInventory) {
+  constructor(playerInventory: Inventory) {
+    this.playerInventory = playerInventory;
     this.playerInventory = playerInventory;
   }
 

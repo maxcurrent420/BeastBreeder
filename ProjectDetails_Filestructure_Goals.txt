@@ -32,8 +32,8 @@ components/monster.js - Monster data and methods
 screens/home.js - Home page and monster list
 components/inventory.js - Inventory data structure
 components/quest.js - Quest data structure
-screens/breeding.js - Breeding system
-screens/battling.js - Basic battling system
+- Implement the breeding system
+- Implement the basic battling system
 components/store.js - Store UI and logic
 utils/gamedata.js - Save/load game data
 utils/procedural.js - Generate quests
