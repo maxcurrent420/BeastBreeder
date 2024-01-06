@@ -1,5 +1,9 @@
-// Inventory class
-class Inventory {
+/**
+ * This file contains the implementation of the Inventory class, which represents the player's inventory in the game. The inventory stores items and provides methods for managing and using them.
+ */// Inventory class
+class Inventory {/**
+ * This file contains the implementation of the Inventory class, which represents the player's inventory in the game. The inventory stores items and provides methods for managing and using them.
+ */
 
   constructor() {
     this.items = [];
