@@ -1,4 +1,5 @@
 import { Monster } from './components/monster.js';
+import { types } from './components/monster.js';
 import { Quest } from './components/quest.js';
 import { Inventory } from './components/inventory.js';
 import * as Store from './components/store.js';
@@ -12,19 +13,12 @@ import * as wallet from './utils/wallet.js';
 import * as gamedata from './utils/gamedata.js';
 
 // Generate monster
-const Monster = monsters.generateMonster();  
+const monster = new Monster("Dragon", 300, 50, 30, ["Fire"]);
 
 // Pass to active screen
 currentScreen.addMonster(Monster);
 
-// Monster object
-class Monster {
-  constructor(name, health, attack) {
-    this.name = name;
-    this.health = health;
-    this.attack = attack;
-  }
-}
+
 
 // Sample monsters
 let monster1 = new Monster("Goblin", 100, 20);
