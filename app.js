@@ -11,6 +11,15 @@ import { loadInventoryScreen } from './screens/inventory.js';
 import * as procedural from './utils/procedural.js';
 import * as wallet from './utils/wallet.js';
 import * as gamedata from './utils/gamedata.js';
+import { NPC } from './components/NPC.js';
+import { dialogues } from './utils/dialogues.js';
+
+// NPCs
+const villageElder = new NPC('Village Elder', 'Elder', dialogues['Village Elder']);
+const shopkeeper = new NPC('Shopkeeper', 'Merchant', dialogues['Shopkeeper']);
+const blacksmith = new NPC('Blacksmith', 'Smith', dialogues['Blacksmith']);
+
+let npcs = [villageElder, shopkeeper, blacksmith];
 
 // Generate monster
 const monster = new Monster("Dragon", 300, 50, 30, ["Fire"]);
