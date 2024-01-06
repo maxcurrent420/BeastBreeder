@@ -1,0 +1,23 @@
+import { Monster } from './monster.js';
+
+export class Quest {
+  constructor(name, description, reward, monsters) {
+    this.name = name;
+    this.description = description;
+    this.reward = reward;
+    this.monsters = monsters;
+  }
+
+  startQuest() {
+    console.log(`Starting quest: ${this.name}`);
+  }
+
+  completeQuest() {
+    console.log(`Completing quest: ${this.name}`);
+    return this.reward;
+  }
+}
+
+export function createQuest(name, description, reward, monsters) {
+  return new Quest(name, description, reward, monsters);
+}
