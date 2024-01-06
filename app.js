@@ -1,4 +1,15 @@
-import * as monsters from './utils/procedural.js';
+import { Monster } from './components/monster.js';
+import { Quest } from './components/quest.js';
+import { Inventory } from './components/inventory.js';
+import * as Store from './components/store.js';
+import { loadHomeScreen } from './screens/home.js';
+import { loadBreedingScreen } from './screens/breeding.js';
+import { loadBattlingScreen } from './screens/battling.js';
+import { loadStoreScreen } from './screens/store.js';
+import { loadInventoryScreen } from './screens/inventory.js';
+import * as procedural from './utils/procedural.js';
+import * as wallet from './utils/wallet.js';
+import * as gamedata from './utils/gamedata.js';
 
 // Generate monster
 const Monster = monsters.generateMonster();  
