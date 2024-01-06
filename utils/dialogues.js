@@ -13,5 +13,13 @@ export const dialogues = {
     "Need some new gear? You've come to the right place.",
     "This is one of my finest creations. It will serve you well.",
     "Safe travels, adventurer. May your blade always be sharp."
+  ],
+  "Seer": [
+    "I foresee a challenge that only you can overcome.",
+    "The strings of fate are tangled. Your path is a complex one."
+  ],
+  "Bugfight Club Bouncer": [
+    "You're not on the list. No entry.",
+    "You think you can handle the fights? Prove it."
   ]
 };
