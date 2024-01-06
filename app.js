@@ -1,6 +1,6 @@
 import { Monster } from './components/monster.js';
 import { types } from './components/monster.js';
-import { Quest } from './components/quest.js';
+import { Quest } from './quest.js';
 import { Inventory } from './components/inventory.js';
 import * as Store from './components/store.js';
 import { loadHomeScreen } from './screens/home.js';
