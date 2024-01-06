@@ -15,8 +15,8 @@ export const dialogues = {
     "Safe travels, adventurer. May your blade always be sharp."
   ],
   "Seer": [
-    "I foresee a challenge that only you can overcome.",
-    "The strings of fate are tangled. Your path is a complex one."
+    "I foresee a challenge that only you can overcome.", // Represents a prophecy or prediction about a challenge that only the player can overcome.
+    "The strings of fate are tangled. Your path is a complex one." // Represents a prophecy or prediction about a challenge that only the player can overcome.
   ],
   "Bugfight Club Bouncer": [
     "You're not on the list. No entry.",
