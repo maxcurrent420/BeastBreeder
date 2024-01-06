@@ -13,7 +13,7 @@ Hosting our game on IPFS (InterPlanetary File System) can offer several benefits
 
 ### Performance
 - **Loading Times**: IPFS can have variable loading times because content is served by peers. Ensuring enough peers have the content can improve load times.
-- **Content Availability**: Content on IPFS is available as long as it is pinned by at least one peer. You may need to use a pinning service to ensure availability.
+- **Content Availability**: Content on IPFS is available as long as it is pinned by at least one peer. We will use a pinning service to ensure availability.
 
 ### Maintenance
 - **Content Updating**: Updating content on IPFS is not as straightforward as on traditional servers. Each update generates a new hash, and you'll need to update links that point to your content.
@@ -27,17 +27,14 @@ Hosting our game on IPFS (InterPlanetary File System) can offer several benefits
 - **Smart Contract Interaction**: If your game interacts with smart contracts, test thoroughly to ensure that IPFS hosting does not introduce any security vulnerabilities.
 - **Data Integrity**: IPFS provides content addressing, which ensures that the content is tamper-proof. However, you should still implement best practices for securing user data.
 
-### Costs
-- **Pinning Services**: While IPFS is a peer-to-peer network, relying on free nodes provided by others can be unreliable. You might need to use a paid pinning service to ensure your content remains available.
-
 ### Scalability
-- **Handling Load**: Consider how IPFS will handle increased traffic. While IPFS can distribute load across nodes, popular content can still face bottlenecks.
+- **Handling Load**: We will address this if we get the sie running and users like it.
 
 ### Development Workflow
 - **Continuous Integration/Deployment**: Your current CI/CD pipelines may need to be adapted for IPFS deployment, which can affect your development workflow.
 
 ### Legal and Ethical Considerations
-- **Content Removal**: On traditional servers, you can easily remove content. On IPFS, once content is distributed and pinned by others, it cannot be easily removed.
+- **Content Removal**: On traditional servers, you can easily remove content. On IPFS, once content is distributed and pinned by others, it cannot be easily removed. We will not entertain content removal. Users will be liable for the content they create or distribute and we will not accept censorship of our own content. 
 
 ### Community Support and Documentation
 - **Support Channels**: Ensure you have access to good support channels for IPFS, as you may encounter unique challenges that require community assistance.
@@ -46,7 +43,7 @@ Hosting our game on IPFS (InterPlanetary File System) can offer several benefits
 - **Data Backup**: Regularly back up your data. While IPFS is distributed, having your own backup is crucial.
 
 ### Monitoring and Analytics
-- **Traffic Analytics**: Implementing analytics for an IPFS-hosted site can be more challenging but is necessary to understand user behavior.
+- **Traffic Analytics**: Not needed at this time.
 
 
 ## Planned Features
