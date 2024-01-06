@@ -23,10 +23,11 @@ class Monster {
 
  Monster type definitions
 const types = {
-  PLANT 'Plant',
-  FIRE 'Fire',
-  WATER 'Water'
+  PLANT: 'Plant',
+  FIRE: 'Fire',
+  WATER: 'Water'
 }
 
  Export Monster class
 export default Monster;
+export { types };
