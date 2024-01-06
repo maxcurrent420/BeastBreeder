@@ -15,6 +15,8 @@ Progress has been made on the base HTML page, minimal styling, instantiating cor
 We plan to host the game on IPFS to ensure it is decentralized and resistant to censorship. This feature is expected to be implemented by Q2 2023.
 
 ### Using MATIC to Buy In-Game Items
+- Advanced Breeding Mechanics
+- Skill Trees and Monster Specializations
 
 To provide a seamless experience for our users, we plan to integrate MATIC as a payment method for buying in-game items. This feature is expected to be implemented by Q3 2023.
 
