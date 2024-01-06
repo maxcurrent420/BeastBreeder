@@ -18,8 +18,8 @@ export const dialogues = {
     "I foresee a challenge that only you can overcome.", // Represents a prophecy or prediction about a challenge that only the player can overcome.
     "The strings of fate are tangled. Your path is a complex one." // Represents a prophecy or prediction about a challenge that only the player can overcome.
   ],
-  "Bugfight Club Bouncer": [
-    "You're not on the list. No entry.",
+  "Bugfight Club Bouncer": [ // The bouncer denying entry to someone not on the list and challenging them to prove their fighting skills.
+    "You're not on the list. No entry.", // Represents the bouncer denying entry to someone not on the list and challenging them to prove their fighting skills.
     "You think you can handle the fights? Prove it."
   ]
 };
