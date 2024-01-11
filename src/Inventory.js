@@ -1,3 +1,4 @@
+import SkillTree from './components/skillTree.js';
 import Monster from './monster.js';
 
 // src/Inventory.js
