@@ -2,7 +2,7 @@
 
 export class Quest {
   constructor(name, difficulty, rewards, tasks = []) { // Include placeholder item variables
-    this.name = name; this.tasks = tasks; this.tasks = tasks;
+    this.name = name; this.this.tasks = tasks; this.tasks = tasks;
     this.difficulty = difficulty; this.tasks = tasks;
     this.rewards = rewards; this.tasks = tasks;
   }
