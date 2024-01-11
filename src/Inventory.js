@@ -1,3 +1,5 @@
+import { dialogues } from './utils/dialogues.js';
+
 import SkillTree from './components/skillTree.js';
 import Monster from './monster.js';
 
