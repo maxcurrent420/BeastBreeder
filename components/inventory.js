@@ -1,4 +1,4 @@
-// components/inventory.js
+
 class Inventory {
   constructor() {
     this.maxItems = 500;
