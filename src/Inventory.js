@@ -1,3 +1,5 @@
+import Monster from './monster.js';
+
 // src/Inventory.js
 
 class Inventory {
