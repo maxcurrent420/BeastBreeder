@@ -2,7 +2,9 @@
 const sword = {name: 'Sword', type: 'Weapon', cost: 100};
 const shield = {name: 'Shield', type: 'Armor', cost: 150};
 
-let storeInventory = [sword, shield];
+import Inventory from './Inventory.js';
+
+const inventory = new Inventory();
 
 // Display store
 export function displayStore() {
