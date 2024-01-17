@@ -46,7 +46,7 @@ BeastBreeder is a monster breeding game centered around breeding insectoids. It 
 - [x] `app.js`: Instantiate core game objects, starting logic
 - [x] `components/monster.js`: Monster data and methods
 - [x] `screens/home.js`: Home page and monster list
-- [ ] `components/inventory.js`: Inventory data structure
+- [x] `components/inventory.js`: Inventory data structure
 - [ ] `components/quest.js`: Quest data structure
 - [ ] `screens/breeding.js`: Breeding system
 - [ ] `screens/battling.js`: Basic battling system
