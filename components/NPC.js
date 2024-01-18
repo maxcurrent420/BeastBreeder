@@ -44,3 +44,12 @@ export class NPC {
     }
   }
 }
+  sellItem(item, player) {
+    if (player.coins >= item.cost) {
+      player.coins -= item.cost;
+      player.inventory.push(item);
+      console.log(`${player.name} has purchased ${item.name} for ${item.cost} coins.`);
+    } else {
+      console.log(`${player.name} does not have enough coins to purchase ${item.name}.`);
+    }
+  }
