@@ -8,12 +8,12 @@ export class NPC {
     this.quests = [];
   }
 
-  createQuest(name, description, reward) {
+  export function createQuest(name, description, reward) {
     const newQuest = new Quest(name, description, reward);
     this.quests.push(newQuest);
   }
 
-  offerQuests(player) {
+  export function offerQuests(player) {
     for (const quest of this.quests) {
       if (!player.quests.includes(quest)) {
         console.log(`${this.name} offers a quest: ${quest.name} - ${quest.description}`);
