@@ -10,7 +10,7 @@ export class Quest {
     this.completed = false; // Initialize completion status
   }
 
-  startQuest() {
+  export function startQuest() {
     // Set initial progress and mark the quest as started
     this.progress = 0;
     this.completed = false;
