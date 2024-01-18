@@ -8,9 +8,8 @@ export class NPC {
     this.quests = [];
   }
 
-  createQuest(name, description, reward) {
-    const newQuest = new Quest(name, description, reward);
-    this.quests.push(newQuest);
+  assignQuest(quest) {
+    this.quests.push(quest);
   }
 
   offerQuests(player) {
