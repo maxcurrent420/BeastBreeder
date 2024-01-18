@@ -5,11 +5,27 @@ export class NPC {
     this.name = name;
     this.role = role;
     this.dialogue = dialogue;
+    this.quests = [];
   }
 
-  startQuest(quest) {
-    if (quest instanceof Quest) {
+  createQuest(name, description, reward) {
+    const newQuest = new Quest(name, description, reward);
+    this.quests.push(newQuest);
+  }
+
+  offerQuests(player) {
+    for (const quest of this.quests) {
+      if (!player.quests.includes(quest)) {
+        console.log(`${this.name} offers a quest: ${quest.name} - ${quest.description}`);
+        player.quests.push(quest);
+      }
+    }
+  }
+
+  startQuest(quest, player) {
+    if (quest instanceof Quest && player.quests.includes(quest) && !quest.isStarted) {
       quest.startQuest();
+      console.log(`${player.name} has started the quest: ${quest.name}`);
     }
   }
 
@@ -17,6 +33,9 @@ export class NPC {
     if (player.coins >= item.cost) {
       player.coins -= item.cost;
       player.inventory.push(item);
+      console.log(`${player.name} has purchased ${item.name} for ${item.cost} coins.`);
+    } else {
+      console.log(`${player.name} does not have enough coins to purchase ${item.name}.`);
     }
   }
 }
