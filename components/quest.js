@@ -1,6 +1,85 @@
 // components/quest.js
 
+/**
+   * @file
+   * This file contains the definition of the Quest class.
+   * It provides functionality related to quests in the game.
+   */
+
 export class Quest {
+  
+   /**
+   * Constructor for the Quest class.
+   *
+   * @param {string} name - The name of the quest.
+   * @param {string} difficulty - The difficulty level of the quest.
+   * @param {string} description - The description of the quest.
+   * @param {Array<string>} rewards - The rewards for completing the quest.
+   * @param {Task[]} tasks - The tasks required to complete the quest.
+   * @returns {void}
+   */
+  
+  
+  
+  startQuest() {
+    /**
+   * Starts the quest and resets the progress.
+   */
+  
+  
+  
+  
+
+  updateProgress(taskIndex) {
+    /**
+   * Updates the progress of the quest based on a completed task.
+   *
+   * @param {number} taskIndex - The index of the completed task.
+   * @returns {void}
+   */
+  
+   }
+
+  
+  
+  checkCompletion() {
+    /**
+   * Checks if all the tasks of the quest are completed.
+   *
+   * @returns {void}
+   */
+  
+  
+  
+   completeQuest() {
+     /**
+   * Completes the quest if all the tasks are done.
+   */
+  
+
+  
+  setDescription(description) {
+    /**
+   * Sets the description of the quest.
+   *
+   * @param {string} description - The new description of the quest.
+   * @returns {void}
+   */
+  
+  
+  
+  
+  
+  setStarted() {
+    /**
+   * Marks the quest as started.
+   */
+  
+  
+  
+  
+  
+  
   constructor(name, difficulty, description, rewards, tasks = []) {
     this.name = name;
     this.difficulty = difficulty;
