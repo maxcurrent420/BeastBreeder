@@ -1,5 +1,6 @@
 import { Inventory, Item } from '../inventory.js';
 import QuestSystem from '../questSystem.js'; // Import the QuestSystem
+import { QuestSystem } from '../questSystem.js'; // Import the QuestSystem
 
 class Battle {
   constructor(playerInventory, questSystem) { // Update the constructor to include questSystem
@@ -21,4 +22,6 @@ class Battle {
   }
 }
 
+export default Battle;
+export default Battle;
 export default Battle;
