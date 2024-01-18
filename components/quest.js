@@ -39,6 +39,12 @@ export class Quest {
   completeQuest() {
     // Complete the quest if all tasks are done
     if (this.completed) {
+  assignQuestToMonster(monster) {
+    monster.startQuest(this); // Assign the quest to the monster
+  }
+  assignQuestToMonster(monster) {
+    monster.startQuest(this); // Assign the quest to the monster
+  }
       console.log('Completing the quest: ' + this.name);
       console.log('Claiming rewards: ', this.rewards);
       // Here you would typically add code to give the rewards to the player
