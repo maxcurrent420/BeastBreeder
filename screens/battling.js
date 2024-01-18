@@ -1,8 +1,10 @@
 import { Inventory, Item } from '../inventory.js';
+import QuestSystem from '../questSystem.js'; // Import the QuestSystem
 
 class Battle {
-  constructor(playerInventory) {
+  constructor(playerInventory, questSystem) { // Update the constructor to include questSystem
     this.playerInventory = playerInventory;
+    this.questSystem = questSystem; // Store the questSystem reference
   }
 
   fight(monster, item) {
@@ -13,6 +15,9 @@ class Battle {
     }
 
     // Logic for fighting the monster goes here
+
+    // Update quest progress after the fight
+    this.questSystem.updateProgress('monster', monster);
   }
 }
 
