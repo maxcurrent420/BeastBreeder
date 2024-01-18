@@ -8,9 +8,8 @@ export class NPC {
     this.quests = [];
   }
 
-  createQuest(name, description, reward) {
-    const newQuest = new Quest(name, description, reward);
-    this.quests.push(newQuest);
+  assignQuest(quest) {
+    this.quests.push(quest);
   }
 
   offerQuests(player) {
@@ -23,6 +22,11 @@ export class NPC {
   }
 
   startQuest(quest, player) {
+      if (quest instanceof Quest && player.quests.includes(quest) && !quest.isStarted) {
+        quest.setStarted();
+        player.quests.push(quest);
+        console.log(`${player.name} has started the quest: ${quest.name}`);
+      }
     if (quest instanceof Quest && player.quests.includes(quest) && !quest.isStarted) {
       quest.startQuest();
       console.log(`${player.name} has started the quest: ${quest.name}`);
