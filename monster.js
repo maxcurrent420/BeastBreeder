@@ -22,7 +22,7 @@ class Monster {
   }
 
   // Quest mechanics
-  startQuest(quest) {
+  export function startQuest(quest) {
     if (this.questStatus === 'None') {
       this.currentQuest = quest;
       this.questStatus = 'InProgress';
