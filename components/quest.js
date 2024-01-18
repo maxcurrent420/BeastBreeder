@@ -1,7 +1,7 @@
 // components/quest.js
 
 export class Quest {
-  constructor(name, difficulty, rewards, tasks = []) {
+  constructor(name, difficulty, description, rewards, tasks = []) {
     this.name = name;
     this.difficulty = difficulty;
     this.rewards = rewards;
@@ -39,6 +39,13 @@ export class Quest {
   completeQuest() {
     // Complete the quest if all tasks are done
     if (this.completed) {
+  setDescription(description) {
+    this.description = description;
+  }
+  isStarted = false;
+  setStarted() {
+    this.isStarted = true;
+  }
       console.log('Completing the quest: ' + this.name);
       console.log('Claiming rewards: ', this.rewards);
       // Here you would typically add code to give the rewards to the player
