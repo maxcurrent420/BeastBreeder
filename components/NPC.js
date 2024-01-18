@@ -22,10 +22,9 @@ export class NPC {
   }
 
   startQuest(quest, player) {
-      if (quest instanceof Quest && player.quests.includes(quest) && !quest.isStarted) {
+      if (quest instanceof Quest && !quest.isStarted && !player.quests.includes(quest)) {
         quest.setStarted();
         player.quests.push(quest);
-        console.log(`${player.name} has started the quest: ${quest.name}`);
       }
     if (quest instanceof Quest && player.quests.includes(quest) && !quest.isStarted) {
       quest.startQuest();
