@@ -22,7 +22,7 @@ class Monster {
   }
 
   // Quest mechanics
-  startQuest(quest) {
+  static startQuest(quest) {
     if (this.questStatus === 'None') {
       this.currentQuest = quest;
       this.questStatus = 'InProgress';
@@ -30,7 +30,7 @@ class Monster {
     }
   }
 
-  updateQuestProgress(progress) {
+  static updateQuestProgress(progress) {
     if (this.questStatus === 'InProgress') {
       this.questProgress += progress;
       if (this.questProgress >= this.currentQuest.requiredProgress) {
@@ -39,7 +39,7 @@ class Monster {
     }
   }
 
-  completeQuest() {
+  static completeQuest() {
     if (this.questStatus === 'InProgress') {
       this.questStatus = 'Completed';
       // Here you might want to give some reward or trigger some event
@@ -63,5 +63,4 @@ class Monster {
 }
 
 // Export Monster class
-export default Monster;
-export const types = Monster.types;
+export { Monster, types, startQuest, updateQuestProgress, completeQuest };
