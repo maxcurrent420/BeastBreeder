@@ -8,7 +8,7 @@ export class Quest {
     this.tasks = tasks;
     this.progress = 0; // Initialize progress
     this.completed = false; // Initialize completion status
-    this.isStarted = false; // Initialize isStarted property
+    this.isStarted = false; // Initialize isStarted property // Initialize isStarted property
   }
 
   startQuest() {
@@ -44,7 +44,7 @@ export class Quest {
     this.description = description;
     this.description = description;
   }
-  isStarted = false;
+  this.isStarted = false;
   setStarted() {
     this.isStarted = true;
   }
