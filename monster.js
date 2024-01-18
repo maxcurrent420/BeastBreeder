@@ -22,6 +22,15 @@ class Monster {
   }
 
   // Quest mechanics
+
+  performQuestAction(action) {
+    if (action === 'search') {
+      this.searchForItems();
+    }
+    else if (action === 'defeat') {
+      this.attackEnemy(this.currentQuest.enemy);
+    }
+  }
   startQuest(quest) {
     if (this.questStatus === 'None') {
       this.currentQuest = quest;
