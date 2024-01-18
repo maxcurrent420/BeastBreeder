@@ -7,6 +7,7 @@ export class Quest {
     this.rewards = rewards;
     this.tasks = tasks;
     this.progress = 0; // Initialize progress
+    this.isStarted = false; // Initialize quest status
     this.completed = false; // Initialize completion status
   }
 
@@ -39,7 +40,7 @@ export class Quest {
   completeQuest() {
     // Complete the quest if all tasks are done
     if (this.completed) {
-  setDescription(description) {
+    setDescription(description) {
     this.description = description;
   }
   isStarted = false;
