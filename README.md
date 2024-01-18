@@ -30,8 +30,6 @@ BeastBreeder is a monster breeding game centered around breeding insectoids. It 
   - `battling.js`: Basic battling system
 - `breeding.js`: Advanced Breeding Mechanics
 - `skill_trees.js`: Skill Trees and Monster Specializations
-  - `store.js`: Store screen
-  - `inventory.js`: Inventory screen
 - `utils/`: Helper classes and functions
   - `procedural.js`: For procedural generation
   - `wallet.js`: Blockchain utils 
