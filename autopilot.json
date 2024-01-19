@@ -1,4 +1,4 @@
 {
-  "ignore": ["sweep.yaml"]
+  "ignore": ["sweep.yaml"],
   "workOnAllIssues": false
 }
