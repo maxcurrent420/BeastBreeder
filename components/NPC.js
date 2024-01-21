@@ -27,11 +27,11 @@ export class NPC {
       player.quests.push(quest);
       console.log(`${player.name} has started the quest: ${quest.name}`);
     }
-    if (quest instanceof Quest && player.quests.includes(quest) && !quest.isStarted) {
-      quest.setStarted();
-      player.quests.push(quest);
-      console.log(`${player.name} has started the quest: ${quest.name}`);
-    }
+  }
+
+  createQuest(name, difficulty, description, rewards, tasks) {
+    const newQuest = new Quest(name, difficulty, description, rewards, tasks);
+    this.assignQuest(newQuest);
   }
 
   sellItem(item, player) {
@@ -44,12 +44,3 @@ export class NPC {
     }
   }
 }
-  sellItem(item, player) {
-    if (player.coins >= item.cost) {
-      player.coins -= item.cost;
-      player.inventory.push(item);
-      console.log(`${player.name} has purchased ${item.name} for ${item.cost} coins.`);
-    } else {
-      console.log(`${player.name} does not have enough coins to purchase ${item.name}.`);
-    }
-  }
